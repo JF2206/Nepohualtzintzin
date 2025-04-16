@@ -1,0 +1,5 @@
+site_name: Nepohualtzintzin
+theme:
+  name: material
+nav:
+  - Inicio: index.md
