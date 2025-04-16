@@ -24,6 +24,9 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
       
 
 
@@ -51,7 +54,12 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -60,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#markdown-y-mkdocs-apuntes-escuetos" class="md-skip">
+        <a href="#snippets-de-codigo" class="md-skip">
           Skip to content
         </a>
       
@@ -103,8 +111,8 @@
       </div>
     </div>
     
+      
     
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -330,8 +338,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -364,8 +370,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -514,6 +518,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo de aplicación:
+    </span>
+  </a>
   
 </li>
       
@@ -542,8 +555,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -695,6 +706,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo de aplicación:
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -713,6 +733,31 @@
 
 <h1 id="markdown-y-mkdocs-apuntes-escuetos">Markdown y MkDocs: apuntes escuetos<a class="headerlink" href="#markdown-y-mkdocs-apuntes-escuetos" title="Permanent link">&para;</a></h1>
 <p>Aquí iré guardando los elementos que vaya necesitando saber sobre markdown, así como ejercicios que los aplican.</p>
+<div class="toc">
+<ul>
+<li><a href="#snippets-de-codigo">Snippets de código</a><ul>
+<li><a href="#en-la-propia-linea">En la propia línea</a></li>
+<li><a href="#en-bloque">En bloque</a></li>
+</ul>
+</li>
+<li><a href="#encabezados-titulos">Encabezados (títulos)</a></li>
+<li><a href="#enfasis">Énfasis</a></li>
+<li><a href="#listas">Listas</a><ul>
+<li><a href="#-lista-sin-orden">- Lista sin orden:</a></li>
+<li><a href="#-lista-numerada">- Lista numerada:</a></li>
+</ul>
+</li>
+<li><a href="#enlaces">Enlaces</a><ul>
+<li><a href="#imagenes">Imágenes</a></li>
+<li><a href="#citas-o-notas">Citas o notas</a></li>
+<li><a href="#separadores">Separadores</a></li>
+<li><a href="#tablas">Tablas</a></li>
+<li><a href="#expresiones-matematicas">Expresiones matemáticas</a></li>
+</ul>
+</li>
+<li><a href="#ejemplo-de-aplicacion">Ejemplo de aplicación:</a></li>
+</ul>
+</div>
 <h2 id="snippets-de-codigo">Snippets de código<a class="headerlink" href="#snippets-de-codigo" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -745,7 +790,7 @@ Se crean mediante tres comillas ``` para abrir y cerrar</li>
 <p><strong>Negrita</strong>: *<em>texto en negrita</em>*</p>
 <p><del>Tachado</del>: ~~texto tachado~~</p>
 <h2 id="listas">Listas<a class="headerlink" href="#listas" title="Permanent link">&para;</a></h2>
-<h3 id="-lista-sin-orden">- <strong>Lista sin orden</strong>:<a class="headerlink" href="#-lista-sin-orden" title="Permanent link">&para;</a></h3>
+<h3 id="-lista-sin-orden">- Lista sin orden:<a class="headerlink" href="#-lista-sin-orden" title="Permanent link">&para;</a></h3>
 <p><div class="highlight"><pre><span></span><code><span class="k">-</span><span class="w"> </span>Elemento 1
 <span class="k">-</span><span class="w"> </span>Elemento 2
 <span class="w">    </span><span class="k">-</span><span class="w"> </span>Subelemento 1
@@ -760,7 +805,7 @@ Resultado:</p>
 </ul>
 </li>
 </ul>
-<h3 id="-lista-numerada">- <strong>Lista numerada</strong>:<a class="headerlink" href="#-lista-numerada" title="Permanent link">&para;</a></h3>
+<h3 id="-lista-numerada">- Lista numerada:<a class="headerlink" href="#-lista-numerada" title="Permanent link">&para;</a></h3>
 <p><div class="highlight"><pre><span></span><code><span class="k">1.</span> Primer elemento
 <span class="k">2.</span> Segundo elemento
 <span class="w">     </span><span class="k">1.</span> Subelemento 1
@@ -828,6 +873,7 @@ $$ x = \frac{-b \pm \sqrt{b^2}-4ac}{2a}$$
 <p>Resultado:
 La fórmula cuadrática es:
 $$ x = \frac{-b \pm \sqrt{b^2}-4ac}{2a}$$</p>
+<h2 id="ejemplo-de-aplicacion">Ejemplo de aplicación:<a class="headerlink" href="#ejemplo-de-aplicacion" title="Permanent link">&para;</a></h2>
 
 
 
@@ -876,7 +922,7 @@ $$ x = \frac{-b \pm \sqrt{b^2}-4ac}{2a}$$</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
