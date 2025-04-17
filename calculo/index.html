@@ -46,6 +46,8 @@
       
     
     
+      <link rel="stylesheet" href="../styles/overrides.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -57,6 +59,8 @@
   
   
     
+    
+      
     
     
     
@@ -114,7 +118,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -302,18 +332,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#01-funciones-elementales" class="md-nav__link">
+  <a href="#01-el-numero-e" class="md-nav__link">
     <span class="md-ellipsis">
-      0.1. Funciones elementales
+      0.1. El número \(e\)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#02-continuidad-uniforme" class="md-nav__link">
+  <a href="#02-funciones-elementales" class="md-nav__link">
     <span class="md-ellipsis">
-      0.2. Continuidad uniforme
+      0.2. Funciones elementales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-funciones-trigonometricas-y-sus-inversas" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.3. Funciones trigonométricas y sus inversas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-continuidad-uniforme" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.3. Continuidad uniforme
     </span>
   </a>
   
@@ -575,18 +623,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#01-funciones-elementales" class="md-nav__link">
+  <a href="#01-el-numero-e" class="md-nav__link">
     <span class="md-ellipsis">
-      0.1. Funciones elementales
+      0.1. El número \(e\)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#02-continuidad-uniforme" class="md-nav__link">
+  <a href="#02-funciones-elementales" class="md-nav__link">
     <span class="md-ellipsis">
-      0.2. Continuidad uniforme
+      0.2. Funciones elementales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-funciones-trigonometricas-y-sus-inversas" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.3. Funciones trigonométricas y sus inversas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-continuidad-uniforme" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.3. Continuidad uniforme
     </span>
   </a>
   
@@ -734,10 +800,163 @@
 
 
 <h1 id="calculo-diferencial-e-integral">Cálculo diferencial e integral<a class="headerlink" href="#calculo-diferencial-e-integral" title="Permanent link">&para;</a></h1>
-<p>Notas relativas al curso de Cálculo II (UGR) durante el curso 24/25.</p>
+<p>Notas relativas a la asignatura Cálculo II durante el curso 24/25.</p>
 <h2 id="0-conceptos-previos">0. Conceptos previos<a class="headerlink" href="#0-conceptos-previos" title="Permanent link">&para;</a></h2>
-<h3 id="01-funciones-elementales">0.1. Funciones elementales<a class="headerlink" href="#01-funciones-elementales" title="Permanent link">&para;</a></h3>
-<h3 id="02-continuidad-uniforme">0.2. Continuidad uniforme<a class="headerlink" href="#02-continuidad-uniforme" title="Permanent link">&para;</a></h3>
+<h3 id="01-el-numero-e">0.1. El número <span class="arithmatex">\(e\)</span><a class="headerlink" href="#01-el-numero-e" title="Permanent link">&para;</a></h3>
+<p>Se prueba fácilmente (por inducción) que <span class="arithmatex">\(\quad 2^{n-1}\leq n!\quad \forall\ n \in \mathbb{N}\)</span>, lo cual nos lleva a definir la siguiente sucesión:</p>
+<div class="arithmatex">\[x_n = 1+1+ \frac{1}{2!} + \frac{1}{3!} + \dots + \frac{1}{n!} \quad \forall n \in \mathbb{N},\]</div>
+<p>la cual está mayorada:</p>
+<div class="arithmatex">\[(x_n) = (1+1+ \frac{1}{2!} + \frac{1}{3!} + \dots + \frac{1}{n!}) \leq (1+1+\frac{1}{2}+\frac{1}{2^2}+\frac{1}{2^3}+\dots+\frac{1}{2^{n-1}}) \leq 3 \quad \forall n \in \mathbb{N}\]</div>
+<p>Por ser una sucesión creciente y mayorada, podemos afirmar que tiene límite. Definimos dicho límite como:</p>
+<div class="arithmatex">\[e := \lim_{n\to \infty} (x_n).\]</div>
+<h3 id="02-funciones-elementales">0.2. Funciones elementales<a class="headerlink" href="#02-funciones-elementales" title="Permanent link">&para;</a></h3>
+<h4 id="021-funcion-exponencial">0.2.1. Función exponencial<a class="headerlink" href="#021-funcion-exponencial" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[f:\mathbb{R} \to \mathbb{R}\\ f(x):= e^x \]</div>
+<p>Así, se cumple que (se demostrará más adelante):</p>
+<ul>
+<li><span class="arithmatex">\(f \space es \space continua\)</span></li>
+<li><span class="arithmatex">\(f \space es \space estrictamente \space creciente \)</span></li>
+<li><span class="arithmatex">\(f(0)=1\)</span></li>
+<li><span class="arithmatex">\(f(x+y)=f(x)f(y)\)</span></li>
+<li><span class="arithmatex">\(f(-x)=\frac{1}{f(x)}\)</span></li>
+<li><span class="arithmatex">\(\lim_{x \to -\infty} f(x) = 0, \quad \lim_{x \to +\infty} f(x) = +\infty\)</span></li>
+</ul>
+<p>Puesto que <span class="arithmatex">\(f\)</span> es estrictamente creciente e inyectiva, tiene inversa (sobre su imagen <span class="arithmatex">\(\mathbb{R^+}\)</span>), la cual definimos como</p>
+<div class="arithmatex">\[f^{-1}:\mathbb{R^+} \to \mathbb{R} \\ f^{-1}(x):= \log{x}\]</div>
+<p>Cumpliendo que </p>
+<div class="arithmatex">\[f(f^{-1}(x))= e^{\log{x}} = x \quad \forall x \in \mathbb{R^+}\]</div>
+<div class="arithmatex">\[f^{-1}(f(x))= \log{e^x} = x \quad \forall x \in \mathbb{R}\]</div>
+<p><br />
+Además, se tienen las siguientes propiedades del logaritmo:
+<br />
+<br /></p>
+<ul>
+<li><span class="arithmatex">\(f^{-1} \space es \space estrictamente \space creciente \space e \space inyectiva\)</span></li>
+<li><span class="arithmatex">\(f^{-1} \space es \space continua \space (por \space ser \space monótona \space cuya \space imagen \space es \space un \space intervalo)\)</span></li>
+<li><span class="arithmatex">\(\log{1} = 0\)</span></li>
+<li><span class="arithmatex">\(\log{xy} = \log{x} + \log{y}\)</span></li>
+<li><span class="arithmatex">\(\log{\frac{1}{x}} = -\log{x}\)</span></li>
+<li><span class="arithmatex">\(\log{x^y} = y\log{x} \quad \forall x \in \mathbb{R^+},\forall y \in \mathbb{R}\)</span></li>
+<li><span class="arithmatex">\(\lim_{x \to 0^+} \log{x} = -\infty, \quad \lim_{x \to +\infty} f(x) = +\infty\)</span></li>
+</ul>
+<p><br />
+<br />
+Podemos definir el resto de funciones exponenciales a partir de la original:</p>
+<div class="arithmatex">\[Dado \space a \gt 0, \space sea \space g:\mathbb{R} \to \mathbb{R^+} \]</div>
+<div class="arithmatex">\[ g(x):= a^x \equiv e^{x\log{a}}\]</div>
+<p>Si <span class="arithmatex">\(a\neq 1\)</span>, entonces podemos definir la inversa como</p>
+<div class="arithmatex">\[ g^{-1}:\mathbb{R^+} \to \mathbb{R} \]</div>
+<div class="arithmatex">\[ g(x):= \log_a{x}\]</div>
+<p>Cumpliendo las siguientes propiedades:</p>
+<ul>
+<li><span class="arithmatex">\( a^{\log_a{x}}=x \quad \forall x \in \mathbb{R^+}\)</span></li>
+<li><span class="arithmatex">\( \log_a{a^x}=x \quad \forall x \in \mathbb{R}\)</span></li>
+</ul>
+<p>Y por tanto, se tiene que <span class="arithmatex">\(\log_a{x} \log{x} = \log{x} \implies \log_a{x} = \frac{\log{x}}{\log{a}}\)</span></p>
+<p><br />
+<br /></p>
+<p>De la misma  forma, podemos definir las funciones potenciales:</p>
+<div class="arithmatex">\[Dado \space b \in \mathbb{R},\space sea \space h:\mathbb{R^+} \to \mathbb{R^+} \]</div>
+<div class="arithmatex">\[ h(x):= x^b\]</div>
+<p>Así, <span class="arithmatex">\(\; x^b=e^{b\log{x}},\;\)</span> luego tenemos que</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(Si \space b \gt 0, \space entonces \space h \space es \space estrictamente \space creciente\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(Si \space b \lt 0, \space entonces \space h \space es \space estrictamente \space decreciente\)</span></p>
+</li>
+</ul>
+<p>y además:</p>
+<ul>
+<li><span class="arithmatex">\(h(1)=1^b=1\)</span></li>
+<li><span class="arithmatex">\(h(xy)=h(x)h(y), \space esto \space es, \space (xy)^b=x^b y^b\)</span></li>
+<li><span class="arithmatex">\(h(\frac{1}{x})=\frac{1}{h(x)}, \space esto \space es, \space (\frac{1}{x})^b = \frac{1}{x^b}\)</span></li>
+</ul>
+<p><br /></p>
+<h3 id="03-funciones-trigonometricas-y-sus-inversas">0.3. Funciones trigonométricas y sus inversas<a class="headerlink" href="#03-funciones-trigonometricas-y-sus-inversas" title="Permanent link">&para;</a></h3>
+<p>Se estudiarán con mayor profundidad y rigor en el capítulo dedicado a series de potencias</p>
+<h4 id="031-coseno">0.3.1. Coseno<a class="headerlink" href="#031-coseno" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[\cos:\mathbb{R} \to \mathbb{R}\]</div>
+<ul>
+<li><span class="arithmatex">\(Continua, \space 2\pi-periódica.\)</span></li>
+<li><span class="arithmatex">\(\cos{0}=1\)</span></li>
+<li><span class="arithmatex">\(\cos{\frac{\pi}{2}}=0\)</span></li>
+<li><span class="arithmatex">\(\cos{\pi}=-1\)</span></li>
+<li><span class="arithmatex">\(\cos{-x}=\cos{x} \quad \forall x \in \mathbb{R} \quad (es \space par)\)</span></li>
+</ul>
+<p><br /></p>
+<p>La función coseno no es inyectiva ni sobreyectiva. Para definir su inversa necesitamos restringirla a un dominio apropiado. Consideramos ahora</p>
+<div class="arithmatex">\[\cos:[0,\pi] \to [-1,1]\]</div>
+<p>de manera que la función es estrictamente decreciente y su imagen es un intervalo, luego podemos definir</p>
+<div class="arithmatex">\[\cos^{-1} \equiv \arccos:[-1,1] \to [0, \pi]\]</div>
+<p>de manera que</p>
+<ul>
+<li><span class="arithmatex">\(\cos{\arccos{x}}=x \quad \forall x \in [-1,1]\)</span></li>
+<li><span class="arithmatex">\(\arccos{\cos{x}}=x \quad \forall x \in [0,\pi]\)</span></li>
+</ul>
+<p><br />
+<br /></p>
+<h4 id="032-seno">0.3.2. Seno<a class="headerlink" href="#032-seno" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[\sin:\mathbb{R} \to \mathbb{R}\]</div>
+<ul>
+<li><span class="arithmatex">\(Continua, \space 2\pi-periódica.\)</span></li>
+<li><span class="arithmatex">\(\sin{0}=0\)</span></li>
+<li><span class="arithmatex">\(\sin{\frac{\pi}{2}}=1\)</span></li>
+<li><span class="arithmatex">\(\sin{\pi}=0\)</span></li>
+<li><span class="arithmatex">\(\sin{-x}=-\sin{x} \quad \forall x \in \mathbb{R} \quad (es \space impar)\)</span></li>
+</ul>
+<p><br /></p>
+<p>La función seno no es inyectiva ni sobreyectiva. Para definir su inversa necesitamos restringirla a un dominio apropiado. Consideramos ahora</p>
+<div class="arithmatex">\[\sin:[-\frac{\pi}{2},\frac{\pi}{2}] \to [-1,1]\]</div>
+<p>de manera que la función es estrictamente creciente y su imagen es un intervalo, luego podemos definir</p>
+<div class="arithmatex">\[\sin^{-1} \equiv \arcsin:[-1,1] \to [0, \pi]\]</div>
+<p>de manera que</p>
+<ul>
+<li><span class="arithmatex">\(\sin{\arcsin{x}}=x \quad \forall x \in [-1,1]\)</span></li>
+<li><span class="arithmatex">\(\arcsin{\sin{x}}=x \quad \forall x \in [-\frac{\pi}{2},\frac{\pi}{2}]\)</span></li>
+</ul>
+<p><br />
+<br /></p>
+<h4 id="033-tangente">0.3.3. Tangente<a class="headerlink" href="#033-tangente" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[\tan:\mathbb{R}\backslash\set{(2k+1)\frac{\pi}{2}} \to \mathbb{R}\]</div>
+<div class="arithmatex">\[\tan{x}:= \frac{\sin{x}}{\cos{x}}\]</div>
+<ul>
+<li><span class="arithmatex">\(Continua, \space \pi-periódica.\)</span></li>
+</ul>
+<p>Para definir su inversa, nos limitamos a un intervalo estándar:</p>
+<div class="arithmatex">\[\tan:(-\frac{\pi}{2},\frac{\pi}{2}) \to \mathbb{R}\]</div>
+<p>De manera que la función resulta estrictamente creciente, y cuya imagen es <span class="arithmatex">\(\mathbb{R}\)</span>, luego podemos definir</p>
+<div class="arithmatex">\[\tan^{-1} \equiv \arctan:\mathbb{R} \to (-\frac{\pi}{2},\frac{\pi}{2}) \]</div>
+<p>Y cumpliendo que</p>
+<ul>
+<li><span class="arithmatex">\(\tan{\arctan{x}}=x \quad \forall x \in \mathbb{R}\)</span></li>
+<li><span class="arithmatex">\(\arctan{\tan{x}}=x \quad \forall x \in (-\frac{\pi}{2},\frac{\pi}{2})\)</span></li>
+</ul>
+<p><br /></p>
+<h4 id="034-relaciones-fundamentales-entre-las-funciones-trigonometricas">0.3.4. Relaciones fundamentales entre las funciones trigonométricas<a class="headerlink" href="#034-relaciones-fundamentales-entre-las-funciones-trigonometricas" title="Permanent link">&para;</a></h4>
+<ol>
+<li><span class="arithmatex">\(\sin^2{x} + \cos^2{x} = 1 \quad \forall x \in \mathbb{R}\)</span></li>
+<li><span class="arithmatex">\(\cos{(x+y)} = \cos{x}\cos{y} - \sin{x} \sin{y}\)</span></li>
+<li><span class="arithmatex">\(\sin{(x+y) = \sin{x}\cos{y} + \cos{x}\sin{y}}\)</span></li>
+</ol>
+<h4 id="035-funciones-hiperbolicas">0.3.5. Funciones hiperbólicas<a class="headerlink" href="#035-funciones-hiperbolicas" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>Coseno hiperbólico:<br />
+$$ \cosh{x}:= \frac{e^x + e^{-x}}{2}\quad \forall x \in \mathbb{R} $$</p>
+</li>
+<li>
+<p>Seno hiperbólico:</p>
+</li>
+</ul>
+<div class="arithmatex">\[ \sinh{x}:= \frac{e^x - e^{-x}}{2}\quad \forall x \in \mathbb{R} \]</div>
+<ul>
+<li>Tangente hiperbólica:</li>
+</ul>
+<div class="arithmatex">\[ \tanh{x}:= \frac{\sinh{x}}{\cosh{x}} = \frac{e^x - e^{-x}}{e^x + e^{-x}}\quad \forall x \in \mathbb{R} \]</div>
+<p><br /></p>
+<h3 id="03-continuidad-uniforme">0.3. Continuidad uniforme<a class="headerlink" href="#03-continuidad-uniforme" title="Permanent link">&para;</a></h3>
 <h2 id="1-derivacion">1. Derivación<a class="headerlink" href="#1-derivacion" title="Permanent link">&para;</a></h2>
 <h3 id="11-concepto-de-derivada-y-de-diferencial-interpretacion-geometrica-y-fisica">1.1. Concepto de derivada y de diferencial. Interpretación geométrica y física<a class="headerlink" href="#11-concepto-de-derivada-y-de-diferencial-interpretacion-geometrica-y-fisica" title="Permanent link">&para;</a></h3>
 <h3 id="12-teoremas-de-rolle-y-del-valor-medio-aplicaciones">1.2. Teoremas de Rolle y del valor medio. Aplicaciones<a class="headerlink" href="#12-teoremas-de-rolle-y-del-valor-medio-aplicaciones" title="Permanent link">&para;</a></h3>

@@ -1,0 +1,55 @@
+/* Aumentar el ancho del contenido central */
+.md-grid {
+    max-width: 1600px; /* Puedes probar también con 1400px o más */
+  }
+  
+  /* Ajustar el tamaño del texto del contenido */
+  .md-typeset {
+    font-size: 18px; /* Valor base, ajústalo a tu gusto */
+    line-height: 1.8;
+  }
+  
+  /* Tamaño del texto del índice lateral derecho */
+  .md-nav--secondary {
+    font-size: 15px;
+  }
+  
+  /* Tamaño del texto de la barra lateral izquierda */
+  .md-nav__item {
+    font-size: 16px;
+  }
+
+  /* Aplica la transición de opacidad */
+  .md-content {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Clase que se activa cuando la página está lista */
+  .page-loaded .md-content {
+    opacity: 1;
+  }
+  
+  /* Aplicar transición suave para fondo y colores */
+html {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Para asegurar que la transición también afecta a los elementos como el header, nav, etc */
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+/* Aplicar tema claro por defecto hasta que se cargue el tema desde localStorage */
+html {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Establecer los estilos del tema oscuro */
+  [data-theme="dark"] {
+    background-color: #333;
+    color: #fff;
+  }
+  
