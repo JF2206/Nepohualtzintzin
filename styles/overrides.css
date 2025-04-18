@@ -42,7 +42,7 @@ html {
   
 /* Aplicar tema claro por defecto hasta que se cargue el tema desde localStorage */
 html {
-    background-color: #fff;
+    background-color: #000000;
     color: #000;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
@@ -50,6 +50,65 @@ html {
   /* Establecer los estilos del tema oscuro */
   [data-theme="dark"] {
     background-color: #333;
-    color: #fff;
+    color: #ffffff;
+  }
+
+  .teorema {
+    border-left: 4px solid #3f51b5;
+    background-color: rgba(63, 81, 181, 0.05);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .teorema p {
+    margin: 0.5rem 0;
+  }
+  
+  .teorema details {
+    margin-top: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-left: 3px dashed #999;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+  }
+  
+  .teorema details summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .definicion, .proposicion, .corolario {
+    border-left: 4px solid;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .definicion {
+    border-color: #4caf50;
+    background-color: rgba(76, 175, 80, 0.05);
+  }
+  
+  .proposicion {
+    border-color: #2196f3;
+    background-color: rgba(33, 150, 243, 0.05);
+  }
+  
+  .corolario {
+    border-color: #ff9800;
+    background-color: rgba(255, 152, 0, 0.05);
+  }
+  
+  details {
+    margin-top: 0.8rem;
+    padding-left: 1rem;
+    border-left: 3px dashed #888;
+  }
+  
+  summary {
+    cursor: pointer;
+    font-weight: bold;
   }
   
